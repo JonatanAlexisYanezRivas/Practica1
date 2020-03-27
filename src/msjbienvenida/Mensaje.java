@@ -92,9 +92,13 @@ public class Mensaje extends javax.swing.JFrame {
     }//GEN-LAST:event_nameActionPerformed
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        // TODO add your handling code here:
-     String nam = name.getText();
-     JOptionPane.showMessageDialog(null, "Bienvenido " + "" + nam);
+
+        String nam = name.getText();
+    if(nam.equals("")){
+        JOptionPane.showMessageDialog(null," Ingrese un nombre");
+    }else{
+          JOptionPane.showMessageDialog(null, "Bienvenido " + nam );
+          }
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
